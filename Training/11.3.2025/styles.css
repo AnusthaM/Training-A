@@ -1,0 +1,71 @@
+button:hover{
+    background-color: rgb(12, 51, 52);
+    color: aquamarine;
+}
+button:active{
+    background-color: aquamarine;
+    color: rgb(38, 63, 55);
+}
+
+button:focus{
+    border: solid pink 10px;
+}
+
+a:link{
+    color: rgb(248, 60, 182);
+}
+a:visited{
+    color: rgb(123, 42, 89);
+}
+a:hover{
+    color: rgb(251, 182, 8);
+    text-decoration: underline chartreuse;
+}
+a:active{
+    color: rgb(187, 0, 255);
+}
+
+ul  li:nth-child(odd){
+    color: rgb(191, 227, 247);
+    text-decoration: underline white;
+    background-color: rgb(123, 3, 3);
+}
+
+ul  li:nth-child(even){
+    color: rgb(247, 191, 238);
+    text-decoration: underline white;
+    background-color: rgb(123, 3, 89);
+}
+
+ul  li:first-child{
+    color: rgb(0, 162, 255);
+    font-weight: bold;
+    background-color: black;
+}
+
+ul  li:last-child{
+    color: rgb(0, 0, 0);
+    font-weight:lighter;
+    background-color: rgb(0, 217, 255);
+}
+
+form :focus{
+    border: solid rgb(123, 255, 0) 3px;
+    box-shadow: 1px 1px 20px rgb(14, 25, 17);
+}
+
+input:checked + label {
+   color: rgb(10, 234, 10);
+  font-weight: bold;
+}
+
+input:disabled + label {
+  color: rgb(176, 176, 176);
+  font-weight: lighter;
+  text-decoration: underline rgb(91, 90, 91) solid;
+}
+
+div:has(h2 + p){
+    color: rgb(255, 0, 255);
+    text-decoration: underline rgb(0, 255, 255) solid;
+}

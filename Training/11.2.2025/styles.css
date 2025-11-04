@@ -1,0 +1,168 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  margin: 20px;
+  color: #000;
+}
+
+.marksheet {
+  border: 2px solid #000;
+  padding: 20px;
+
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  color: red;
+  margin-bottom: 0;
+}
+
+.address {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+.details, .student-info, .summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.details label, .student-info label, .summary label {
+  font-weight: bold;
+}
+
+.roll {
+    gap: 0;
+  background-color: yellow;
+  padding: 5px 30px;
+  border: 1px solid #000;
+}
+
+table {
+ width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+td:nth-child(2), td:nth-child(3) {
+  background-color: rgb(106, 83, 126);
+}
+
+td:nth-child(4), td:nth-child(5) {
+  background-color: rgb(234, 180, 135);
+}
+
+.first-table th{
+    text-align: left;
+    background-color: rgb(250, 241, 177);
+}
+
+.first-table td{
+    text-align: left;
+    background-color: white;
+}
+
+th, td {
+  border: 1px solid #000;
+  text-align: center;
+  padding: 6px;
+}
+
+
+th {
+  background-color:  rgb(250, 241, 177);;
+}
+
+.red-text {
+  color: red;
+  background-color: rgb(255, 134, 134);
+}
+
+.green-text {
+  color: rgb(10, 10, 10);
+  background-color: rgb(144, 238, 144);
+}
+
+.footer {
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid red; 
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}
+
+.main-table {
+  border: #000 solid 2px;
+}
+.main-table th, .main-table td{
+    border: #000 solid 2px;
+}
+.fail {
+  background-color: #ffe5e5;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.blur-bg {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.header > div{
+    color: rgb(131, 23, 226);
+}
+
+/*  Subsequent Sibling combinator example */
+.article1 ~ div{
+    background-color: aqua;
+}
+ /* Next Sibling Combinator*/
+.article1 + div{
+    background-color: lightgreen;
+} 
+
+header > div + button :active{
+   background-color: rgb(232, 148, 22);
+    cursor: pointer;
+}
+
+/*Example HTML for multiple combinators*/
+header > div ~ button:hover{
+    background-color: rgb(154, 153, 153); /* if '+ ' then first button only affected */
+}
+
+/* Document structure */
+ .my-list li:first-child {
+    color: blue;
+ }
+ .my-list li:last-child{
+    color: aquamarine;
+ }
+
+ .my-list li:nth-child(2){
+    color: orange;
+ }
+
+div div:not(.fancy){
+    color: rgb(117, 96, 252);
+ }
+
+ .card{
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+ }
+
+ .card:has(> img){
+    padding: 20px;
+ }
+
+ .card:has(> span){
+    color: rgb(255, 0, 0);
+ }

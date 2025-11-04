@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form</title>
+  <style>
+    input[type="text"],
+    input[type="email"] {
+      height: 10px;
+      padding: 5px;
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+
+<body
+  style="background-color: aliceblue;font-family:sans-serif;justify-content: center;align-items: center;display: flex;">
+  <form style=" display: flex; background-color: rgb(255, 255, 255);padding: 0; width: 500px;">
+    <fieldset style="border: none; box-shadow: #6e6e6e 5px;">
+      <label for="email" style=" font-weight: 500; margin-bottom: 5px;">Email Address</label>
+      <input type="email" id="email" name="email" required style="width: 450px; " />
+
+      <label for="fname">Full Name</label>
+      <div style="display: flex; gap: 5px;">
+        <input type="text" id="fname" name="First name" placeholder="First Name" style="padding: 5px; width: 210px;" />
+        <input type="text" id="lname" name="Last name" placeholder="Last Name" style="padding: 5px; width: 210px;" />
+      </div>
+      <label for="address">Address</label>
+      <input type="text" id="address" name="address" placeholder="Street Address"
+        style="width: 450px; margin-bottom: 5px;" />
+      <br>
+      <input type="text" id="address" name="address" placeholder="Office, Suit, Apt." style="width: 450px ;" />
+      </div>
+      <div class="add" style="display: flex; padding-right: 5px;">
+        <label for="city">City
+          <input type="text" id="city " name="city" style="width: 175px;" />
+        </label>
+        <label for="state">State
+          <select id="state" name="state" style="height: 25px; width: 150px;">
+            <option value="" selected>Choose...</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select></label>
+        <label for="zip">Zip
+          <input type="text" id="zip" name="zip" style="width: 75px;" /></label>
+
+      </div>
+      <label for="paydetails">Payment Details</label>
+      <div class="pay" style="display: flex; width: 450px;padding-bottom: 0;">
+        <input type="text" placeholder="🔒 0000 0000 0000 0000" required
+          style="outline: none; border: none; border-left: 0.5px solid rgb(49, 49, 49);border-top:0.5px solid rgb(49, 49, 49);border-bottom: 0.5px solid rgb(49, 49, 49); border-radius: 3px 0px 0px 3px;width: 300px;  margin-bottom: 0;">
+        <input type="text" placeholder="MM/YY" required
+          style="outline: none; border: none;border-top:0.5px solid rgb(49, 49, 49);border-bottom: 0.5px solid rgb(49, 49, 49);width: 75px; margin-bottom: 0;">
+        <input type="text" placeholder="CVV" required
+          style="outline: none; border: none; border-top:0.5px solid rgb(49, 49, 49);border-bottom: 0.5px solid rgb(49, 49, 49);width: 75px; margin-bottom: 0;">
+        <input type="text" placeholder="ZIP" required
+          style=" outline: none; border: none; border-right: 0.5px solid rgb(49, 49, 49);border-top:0.5px solid rgb(49, 49, 49);border-bottom: 0.5px solid rgb(49, 49, 49);border-radius: 0px 3px 3px 0px;width: 75px; margin-bottom: 0;">
+      </div>
+      <p style="color: #6e6e6e; margin-top: 0; font-weight: 200; font-size: small; margin-bottom: 20px;">
+        Encrypted and Secured
+      </p>
+
+      <label for="question">What radio technologies are you using?</label>
+      <div style="display: flex; gap: 30px;margin-bottom: 10px;">
+        <label for="2G">
+          <input type="checkbox" name="technologies" />
+          2G</label>
+        <label for="3G">
+          <input type="checkbox" name="technologies" />
+          3G</label>
+        <label for="4G">
+          <input type="checkbox" name="technologies" />
+          4G LTE</label>
+        <label for="cat-m">
+          <input type="checkbox" name="technologies" />
+          CAT-M</label>
+      </div>
+
+      <label for="question">
+        How much data do you expect to use each month?
+      </label>
+      <div style="display: flex; gap: 10px;margin-bottom: 10px;">
+        <label for="0-50mb">
+          <input type="radio" name="data" />
+          0-50 MB</label>
+        <label for="50-250mb">
+          <input type="radio" name="data" />
+          50-250 MB</label>
+        <label for="250mb-1gb">
+          <input type="radio" name="data" />
+          250 MB - 1 GB</label>
+        <label for="1gb+" style="cursor: not-allowed;">
+          <input type="radio" name="data" disabled style="cursor: not-allowed;" />
+          1 GB+</label>
+      </div>
+      <label for="promo">Promo Code</label>
+      <input type="text" id="promo" name="promo" style="width: 450px;margin-bottom: 20px;" />
+
+      <div class="btm" style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+        <label style="color: #6e6e6e; cursor: not-allowed;">
+          <input type="checkbox" checked disabled style="cursor: not-allowed;">
+          Sign me up for annoying offers
+        </label>
+        <button class="btn" type="submit"
+          style="cursor:pointer;color: white;background-color: rgb(49, 49, 236);border-radius:3px; padding: 5px 10px; border:rgb(49, 49, 236) solid 2px; box-shadow: blue;" />Place
+        Order</button>
+      </div>
+    </fieldset>
+  </form>
+
+
+</body>
+
+</html>
