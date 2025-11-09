@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"> 
+</head>
+<body>
+
+    <!-- 1.Simple Landing Page -->
+    <!-- NAVBAR -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Fifth navbar example">
+        <div class="d-flex justify-content-between container-fluid">
+            <div class="text-white">
+                <i class="bi bi-android"></i>
+            </div>
+            <div>
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse px-2" id="navbarsExample05">
+                    <ul class="navbar-nav me-auto mb-2 pe-3 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown05">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form>
+                        <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- HERO SECTION -->
+     <div class="container col-xxl-8 px-2 py-5 align-content-center justify-content-center">
+        <div class="row flex-lg-row-reverse align-items-center g-4 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="../11.5.2025/coffee.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" loading="lazy" style="height: 400px;">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold lh-1 mb-3">Hello EveryNyan!! I'm Fine. Thank You.</h1>
+                <p class="fw-lighter fs-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, nihil odit consequatur maiores quae eum aliquam sapiente, iusto laudantium nisi eius laboriosam. Optio corporis, voluptatibus doloribus velit illum ea sunt?</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-outline-success btn-lg px-4 me-md-2">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="border-light">
+
+    <!-- 2.Build 3 Column Layout -->
+    <div class="container px-4 py-5 align-content-center justify-content-center" id="custom-cards">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            <div class="col col-md-4">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">MOON</h2>
+                        <ul class="d-flex list-unstyled mt-auto">
+
+                        <li class="d-flex align-items-center me-3">
+                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                            <small>Earth</small>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                            <small>3d</small>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-md-4">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Flower</h2>
+                        <ul class="d-flex list-unstyled mt-auto">
+
+                        <li class="d-flex align-items-center me-3">
+                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                            <small>Pakistan</small>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                            <small>4d</small>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-md-4">
+                <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                        <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">JellyFish</h2>
+                        <ul class="d-flex list-unstyled mt-auto">
+
+                        <li class="d-flex align-items-center me-3">
+                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                            <small>California</small>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                            <small>5d</small>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="border-light">
+
+    <!-- 3.Create a responsive image gallery -->
+     <div class="container py-5">
+        <h2 class="text-center mb-4">Responsive Image Gallery</h2>
+
+        <div class="row gallery g-4">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="https://picsum.photos/300/200?random=1" class="img-fluid" alt="Gallery image 1">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="https://picsum.photos/300/200?random=2" class="img-fluid" alt="Gallery image 2">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="https://picsum.photos/300/200?random=3" class="img-fluid" alt="Gallery image 3">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="https://picsum.photos/300/200?random=4" class="img-fluid" alt="Gallery image 4">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="https://picsum.photos/300/200?random=5" class="img-fluid" alt="Gallery image 5">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="https://picsum.photos/300/200?random=6" class="img-fluid" alt="Gallery image 6">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="https://picsum.photos/300/200?random=7" class="img-fluid" alt="Gallery image 7">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <img src="https://picsum.photos/300/200?random=8" class="img-fluid" alt="Gallery image 8">
+            </div>
+        </div>
+    </div>
+    
+    <hr class="border-light">
+
+    <!-- 4. Add Buttons and Alerts -->
+    <section id="buttons-alerts" class="mb-5 px-4">
+        <div class="mb-3">
+            <button class="btn btn-primary me-2">Primary</button>
+            <button class="btn btn-success me-2">Success</button>
+            <button class="btn btn-danger">Danger</button>
+        </div>
+
+        <div class="alert alert-success mt-3">✅ Success! Your action was successful.</div>
+        <div class="alert alert-warning mt-2">⚠️ Warning! Something needs attention.</div>
+        <div class="alert alert-danger mt-2">❌ Error! Something went wrong.</div>
+        </section>
+
+    <hr class="border-light">
+
+    <!-- 5. Build a Simple Login Form -->
+    <section id="login-form" class="my-5">
+      <div class="d-flex justify-content-center">
+        <div class="card p-4 bg-dark text-light" style="max-width: 400px; width: 100%;">
+          <h3 class="text-center mb-3">Login</h3>
+
+          <form>
+            <div class="mb-3">
+              <label for="username" class="form-label">Username</label>
+              <input type="text" class="form-control" id="username" placeholder="Enter username">
+            </div>
+
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Enter password">
+            </div>
+
+            <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" id="remember">
+              <label class="form-check-label" for="remember">
+                Remember me
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 mb-2">Login</button>
+            <a href="#" class="d-block text-center text-primary">Forgot Password?</a>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <hr class="border-light">
+
+    <!-- 6. Create a Pricing Table -->
+    <section id="pricing-table" class="my-5 mx-sm-5">
+      <div class="row text-center g-4">
+        <!-- Basic Plan -->
+        <div class="col-md-4">
+          <div class="card h-100 bg-secondary-subtle text-dark">
+            <div class="card-header">
+              <h4>Basic Plan</h4>
+            </div>
+            <div class="card-body">
+              <p>✔️ 5GB Storage</p>
+              <p>✔️ 10 Projects</p>
+              <p>✔️ Community Support</p>
+            </div>
+            <div class="card-footer">
+              <h5>$9 / month</h5>
+              <button class="btn btn-outline-primary mt-2">Choose</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pro Plan (Highlighted) -->
+        <div class="col-md-4">
+          <div class="card h-100 border-primary bg-light text-dark">
+            <div class="card-header bg-primary text-white">
+              <h4>Pro Plan</h4>
+            </div>
+            <div class="card-body">
+              <p>✔️ 50GB Storage</p>
+              <p>✔️ 100 Projects</p>
+              <p>✔️ Priority Support</p>
+            </div>
+            <div class="card-footer">
+              <h5>$29 / month</h5>
+              <button class="btn btn-primary mt-2">Choose</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="col-md-4">
+          <div class="card h-100 bg-secondary text-light">
+            <div class="card-header">
+              <h4>Premium Plan</h4>
+            </div>
+            <div class="card-body">
+              <p>✔️ 200GB Storage</p>
+              <p>✔️ Unlimited Projects</p>
+              <p>✔️ 24/7 Support</p>
+            </div>
+            <div class="card-footer">
+              <h5>$49 / month</h5>
+              <button class="btn btn-outline-light mt-2">Choose</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+</body>
+</html>

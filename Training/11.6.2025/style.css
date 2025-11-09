@@ -1,0 +1,62 @@
+
+.row *{
+    border: 1px solid black;
+    overflow: hidden;
+}
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+@media (max-width: 576px) { 
+    h1{
+        color: rgb(166, 255, 0);
+    }
+    p{
+        font-size: x-small;
+    }
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    h1{
+        color: aqua;
+    }
+    p{
+        font-size: small;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+      h1{
+        color: rgb(255, 238, 0);
+    }
+    p{
+        font-size: medium;
+    }
+ }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+      h1{
+        color: rgb(255, 0, 0);
+    }
+    p{
+        font-size: large;
+    }
+ }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+      h1{
+        color: rgb(0, 102, 255);
+    }
+    p{
+        font-size: x-large;
+    }
+ }
+
+/*XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+      h1{
+        color: rgb(255, 0, 200);
+    }
+    p{font-size: xx-large;}
+ }
